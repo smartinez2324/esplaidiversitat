@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+  <!-- 🟢 Menú fijo -->
+<header>
+  <div class="menu-container"> <!-- Contenedor exclusivo para el menú -->
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img src="../img/LOGO.png" alt="" width="60" height="50">
+      </a>
+      <input type="checkbox" id="toggler">
+      <label for="toggler"><i class="ri-menu-line"></i>☰</label>
+      <div class="menu">
+          <ul class="list">
+              <li><a href="../index.html">Inici</a></li>
+        <li><a href="../html/quisom.html">Qui Som?</a></li>
+        <li><a href="../html/quefem.html">Què Fem?</a></li>
+    
+        <li><a href="../html/galeria.html">Galeria</a></li>
+        <li><a href="../html/treballa amb nosaltres.html">Treballa amb Nosaltres</a></li>
+        <li><a href="../html/contacte.html">Contacte</a></li>
+          </ul>
+      </div>
+  </nav>
+  </div>
+</header>
+
+
+<div class="contacte">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <div class="subpiso1">
+    <div class="subcolumna1">
+      <div class="onsom">
+        <h1>Contacte</h1>
+        </br>
+        <h2>On Som?</h2>
+        <p>El Club d'Esplai Diversitat Lúdica té la seva seu al <b>Centre Cívic Les Tovalloles</b>, un espai obert a la comunitat on desenvolupem moltes de les nostres activitats.</p>
+        
+        <h3>Adreça:</h3>
+        <p>Centre Cívic Les Tovalloles<br>
+          C/ Riera de la Salut, 7<br>
+          08980, Sant Feliu de Llobregat
+        </p>
+
+        <iframe width="100%" height="300" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.447058638528!2d2.042423275878579!3d41.38609667129998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49a4a3fbd26b9%3A0xbbf4bf94808a71a2!2sCentre%20C%C3%ADvic%20Les%20Tovalloles!5e0!3m2!1sca!2ses!4v1742858454238!5m2!1sca!2ses"> 
+        </iframe>
+      <h3>Si vols més informació sobre les nostres activitats o formar part de l'esplai, contacta'ns!</h3>
+
+        <div class="contacto-item">
+          <i class="fa-brands fa-viber fa-2x"></i>
+          <p class="tf">93 632 57 88</p>
+        </div>
+
+        <div class="contacto-item">
+          <i class="fa-regular fa-envelope fa-2x"></i>
+          <p class="ce">diversitatludica@fundesplai.org</p>
+        </div>
+        </br>
+      </div>
+    </div>
+
+    <div class="subcolumna2">
+      <!-- Contenedor del formulario -->
+      <div class="form-container">
+        <h1>Formulari de Contacte</h1>
+        <form action="send_email.php" method="POST">
+          <div class="form-group">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correu Electrònic:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefono (Espanya):</label>
+            <input type="tel" id="phone" name="phone" pattern="^(?:\+34|0034|34)?[6789]\d{8}$" required placeholder="+34 612345678">
+            <small>Ha de ser un número vàlid a Espanya</small>
+          </div>
+          <div class="form-group">
+            <label for="message">Missatge:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit">Envia</button>
+        </form>
+        <div id="response" class="response-message"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="xarxes">
+  <div class="cajita">
+    <h3 class="redes">Segueix-nos a les xarxes socials per estar al dia de totes les novetats.</h3>
+  </div>
+  
+  <div class="cajita social-links">
+    <div class="contacto-item">
+      <a href="https://wa.me/34600838968"><i class="fa-brands fa-whatsapp"></i></a>
+      <p class="ws">600 83 89 68</p>
+    </div>
+
+    <div class="contacto-item">
+      <a href="https://www.facebook.com/share/1Bgi6zjJ7P/"><i class="fa-brands fa-facebook"></i></a>
+      <p class="fc">Club d'Esplai Diversitat Lúdica</p>
+    </div>
+
+    <div class="contacto-item">
+      <a href="https://www.instagram.com/esplaidiversitatludica?igsh=b2RxZjkwa2o4b2g5"> <i class="fa-brands fa-instagram"></i></a>
+      <p class="ig">esplaidiversitatludica</p>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

@@ -19,6 +19,7 @@
 
 body{
   font-family: helvetica;
+  background-color: #d1e7f8;
 }
 
 
@@ -185,7 +186,8 @@ main {
 }
 
 #club{
-  color: #83b2d9;
+  color: #1565c0;
+  text-align: start;
 }
 
 .carousel-item {
@@ -301,197 +303,216 @@ main {
 /*COLONIES I CAMPAMENTS*/
 
 
+/*ACTUALITAT NOTICIES*/
+
 /* Contenedor principal */
-.colonias-campamento {
+.contenedor_noti {
   width: 80%;
   margin: 2rem auto;
   background: #f0f0f0;
   padding: 2rem;
-  display: flex;
-  gap: 1.5rem;
 }
 
-/* Contenedor izquierdo (contenido principal) */
-.contenido-izquierdo {
-  width: 70%;
-}
-
-/* Filas horizontales */
-.fila-horizontal-superior, .fila-horizontal-inferior {
+/* Fila horizontal */
+.contenedor_noti .fila-horizontal {
   background: #ffffff;
   color: #000;
   padding: 1.5rem;
-  text-align: start;
+  text-align: justify;
   margin-bottom: 1.5rem;
 }
 
 /* Contenedor de columnas */
-.contenedor-columnas {
+.contenedor_noti .contenedor-columnas {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+
+.casal {
+  text-align: center;
 }
 
 /* Columnas */
-.subcolumna {
+.contenedor_noti .columna {
   flex: 1;
   padding: 1.5rem;
-  background: ;
-  color: #000;
+  background: #ffffff;
+  color: black;
   text-align: start;
-  min-width: 250px;
 }
 
-/* Columna derecha */
-.columna-derecha {
-  width: 50%;
-  background:;
+/* Encabezado */
+.act {
+  text-align: center;
+}
+
+/* Botón */
+.btn {
+  background-color: #e1c405;
+  border: none;
   color: white;
-  padding: 1.5rem;
+  padding: 1rem 2rem;
   text-align: center;
-}
-
-/* Imagen dentro de la columna derecha */
-.columna-derecha img {
-  width: 50%;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-.columna-derecha:hover img {
-  transform: scale(1.1);
-}
-.notici{
-  text-align: center;
-}
-
-/* RESPONSIVE: Móviles */
-@media (max-width: 768px) {
-  .colonias-campamento {
-      flex-direction: column;
-      width: 95%;
-      padding: 1rem;
-  }
-
-  .contenido-izquierdo {
-      width: 100%;
-  }
-
-  .contenedor-columnas {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .subcolumna {
-      width: 100%;
-      text-align: left;
-      padding: 1rem;
-  }
-
-  .columna-derecha {
-      width: 100%;
-      text-align: left;
-      padding: 1rem;
-  }
-}
-/* Contenedor principal */
-.colonias-campamento {
-  width: 80%;
-  margin: 2rem auto;
-  background: #f0f0f0;
-  padding: 2rem;
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;  /* Permite que el contenido se acomode mejor en pantallas más pequeñas */
-}
-
-/* Contenedor izquierdo (contenido principal) */
-.contenido-izquierdo {
-  width: 70%;
-}
-
-/* Filas horizontales */
-.fila-horizontal-superior, .fila-horizontal-inferior {
-  background: #ffffff;
-  color: #000;
-  padding: 1.5rem;
-  text-align: start;
-  margin-bottom: 1.5rem;
-}
-
-/* Contenedor de columnas */
-.contenedor-columnas {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-/* Columnas */
-.subcolumna {
-  flex: 1;
-  padding: 1.5rem;
-  background: ;
-  color: #000;
-  text-align: start;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
   border-radius: 0.5rem;
-  min-width: 250px;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
-/* Columna derecha */
-.columna-derecha {
-  width: 20%;  /* Reducida a 20% en vez de 30% */
-  background: ;
-  color: white;
-  padding: 1.5rem;
-  text-align: center;
+.btn:hover {
+  background-color: #f4e841;
+  transform: scale(1.05);
 }
 
-/* Imagen dentro de la columna derecha */
-.columna-derecha img {
+/* Imagen */
+.columna img {
   width: 100%;
-  height: auto;
+  max-width: 400px;
   border-radius: 0.5rem;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Espacio entre columnas y la fila horizontal inferior */
+/* RESPONSIVE: Diseño para móviles */
+@media (max-width: 768px) {
+  .contenedor_noti {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .contenedor_noti .contenedor-columnas {
+    flex-direction: column;
+  }
+
+  .contenedor_noti .columna {
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/*COLONIES I CAMPAMENTS*/
+
+/* Contenedor principal */
+.colonias-campamento {
+  width: 80%;
+  margin: 2rem auto;
+  background: #f0f0f0;
+  padding: 2rem;
+  display: block;
+}
+
+/* Filas horizontales */
+.fila-horizontal-superior,
 .fila-horizontal-inferior {
-  margin-top: 2rem;  /* Agregamos espacio entre las columnas y la fila horizontal inferior */
+  background: #ffffff;
+  color: #000;
+  padding: 1.5rem;
+  text-align: start;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor de columnas */
+.contenedor-columnas {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Columnas */
+.subcolumna {
+  flex: 1;
+  padding: 1.5rem;
+  background: #ffffff;
+  color: #000;
+  text-align: start;
+  border-radius: 0rem;
+  min-width: 250px;
+}
+
+/* Encabezado */
+.notici {
+  text-align: center;
+}
+
+/* Bloque inferior: Inscripció + Imatge */
+.fila-horizontal-inferior-doscolumnas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: #ffffff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 0rem;
+  align-items: flex-start;
+}
+
+/* Columna de texto */
+.texto-inscripcion {
+  flex: 1;
+  min-width: 280px;
+  text-align: start;
+  background-color: ;
+}
+
+/* Columna de imagen */
+.imagen-inscripcion {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ;
+}
+
+.imagen-inscripcion img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 /* RESPONSIVE: Móviles */
 @media (max-width: 768px) {
   .colonias-campamento {
-      flex-direction: column;
-      width: 95%;
-      padding: 1rem;
-  }
-
-  .contenido-izquierdo {
-      width: 100%;
+    width: 95%;
+    padding: 1rem;
   }
 
   .contenedor-columnas {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .subcolumna {
-      width: 100%;
-      text-align: left;
-      padding: 1rem;
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
   }
 
-  .columna-derecha {
-      width: 100%;
-      text-align: left;
-      padding: 1rem;
-    height: 50%;
+  .fila-horizontal-inferior-doscolumnas {
+    flex-direction: column;
+  }
+
+  .imagen-inscripcion img {
+    max-width: 100%;
   }
 }
 
 
-/* Segundo quim som */
+
+/* QUI SOM*/
 
 /* Ajuste del contenedor principal */
 .contenedor-2 {
@@ -504,11 +525,12 @@ main {
   padding-top: 2rem; /* Agrega un pequeño espacio para no chocar con el menú */
 }
 .qui{
-  color: #ffffff;
+  color: #000;
+  text-align: center;
 }
 /* Ajuste del contenedor superior */
 .contenedor-superior {
-  background-color: lightblue;
+  background-color: #fff;
   width: 100%;
   height: 20rem;
   text-align: center;
@@ -533,6 +555,29 @@ main {
   word-wrap: break-word; /* Asegura que las palabras largas se dividan para evitar desbordamiento */
   margin: 1rem; /* Reduce los márgenes */
 }
+
+.fundesplai {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  background-color: ;
+}
+
+.fundesplai-img {
+  height: 150px; /* o el alto que prefieras */
+  object-fit: contain;
+  margin: 0 1em;
+  background-color: ;
+}
+
+.fundesplai-img2 {
+  height: 100px; /* o el alto que prefieras */
+  object-fit: contain;
+  margin: 0 1em;
+  background-color: ;
+}
+
 
 /* QUÈ FEM? */
 
@@ -605,6 +650,13 @@ main {
   transition: 0.5s ease-in-out;
 }
 
+/*Fon size*/
+.inner_content, #descripcio{
+  font-size: 1.8rem;
+}
+
+
+
 /* Alternancia de colores */
 .slider .slide:nth-child(even) {
   background-color: #fca0a0;
@@ -642,6 +694,68 @@ main {
 
   .slider .slide_navigation a {
       font-size: 0.9rem; /* Reducir el tamaño del texto */
+  }
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.gallery-fem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f2f2f2;
+  padding: 2rem;
+  color: #333;
+}
+
+.polaroid {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+
+.polaroid:hover {
+  transform: rotate(-2deg) scale(1.03);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto; /* Mantiene la proporción sin estirarlas verticalmente */
+  object-fit: cover; /* Asegura que se recorten si es necesario para llenar el contenedor sin deformarse */
+  max-height: 400px; /* Límite de altura para que no se haga tan grande */
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+.polaroid:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive para pantallas pequeñas */
+@media(max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 600px) {
+  .gallery-fem {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -727,70 +841,6 @@ main {
   }
 }
 
-
-/*REDES */
-/* Estilos generales */
-.xarxes {
-background: #f0f0f0;
-padding: 20px;
-text-align: center;
-margin-top: 5rem;
-}
-.redes{
-color: #d71f10 ;
-}
-/* Contenedor de los iconos */
-.social-links {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 5rem; /* Ajusta el espacio entre iconos */
-flex-wrap: wrap;
-margin-top: 10px;
-}
-
-/* Estilo de cada contacto */
-.contacto-item {
-display: flex;
-align-items: center;
-gap: 10px;
-}
-
-/* Iconos más grandes */
-.contacto-item i {
-font-size: 2.5rem;
-color: #000;
-}
-
-/* Ajuste del texto */
-.contacto-item p {
-font-size: 1.4rem;
-color: #000;
-margin: 0;
-}
-
-/* 📱 Responsive */
-@media (max-width: 768px) {
-.social-links {
-  flex-direction: column;
-  align-items: flex-start; /* 🔹 Alinea a la izquierda */
-  justify-content: flex-start;
-  gap: 15px;
-}
-
-.contacto-item {
-  width: 100%;
-  justify-content: flex-start; /* 🔹 Asegura que el icono y el texto estén alineados */
-}
-
-.contacto-item i {
-  font-size: 2rem;
-}
-
-.contacto-item p {
-  font-size: 1.2rem;
-}
-}
 
 
 /*TREBALLLA AMB NOSALTRES*/
@@ -1165,4 +1215,5 @@ iframe {
   .contacto-item p {
     font-size: 1.2rem;
   }
+
 }

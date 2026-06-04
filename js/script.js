@@ -24,58 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // QUÈ FEM
+//
 
-(function () {
-    "use strict";
-
-    const vertical_slider = {
-        slider_class: ".slider",
-
-        show_slide: function (slide_id, context_item) {
-            const slide_container = context_item.closest(this.slider_class).querySelector(".slides");
-
-            if (slide_container) {
-                const target_slide = document.querySelector(slide_id);
-                if (target_slide) {
-                    // Prevenir el comportamiento por defecto del enlace
-                    event.preventDefault();
-
-                    // Desplazar suavemente hacia el slide
-                    slide_container.scrollTo({
-                        top: target_slide.offsetTop,
-                        behavior: "smooth"
-                    });
-
-                    // Eliminar la clase 'active' del item anterior
-                    const active_context_item = context_item.closest(".slide_navigation").querySelector(".active");
-                    if (active_context_item) {
-                        active_context_item.classList.remove("active");
-                    }
-
-                    // Añadir la clase 'active' al item clicado
-                    context_item.classList.add("active");
-                }
-            }
-        },
-
-        init_slider: function (slider) {
-            const navigation_items = slider.querySelectorAll(".slide_navigation a");
-
-            navigation_items.forEach((item) => {
-                item.addEventListener("click", function (e) {
-                    e.preventDefault();  // Prevenir el comportamiento predeterminado
-                    vertical_slider.show_slide(this.getAttribute("href"), this);
-                });
-            });
-        },
-
-        init: function () {
-            document.querySelectorAll(this.slider_class).forEach((slider) => this.init_slider(slider));
-        }
-    };
-
-    vertical_slider.init();
-})();
 
 
 //formulario

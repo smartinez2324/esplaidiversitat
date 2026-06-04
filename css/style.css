@@ -1,14 +1,7 @@
-/**
-* Template Name: Active
-* Template URL: https://bootstrapmade.com/active-bootstrap-website-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
@@ -201,9 +194,482 @@ main {
 }
 
 
+/* SECCIÓN ACTUALITAT*/
+
+/*festa colonias nadal */
+/* Contenedor principal */
+.contenedor_informativo {
+  width: 80%;
+  margin: 2rem auto;
+  background: #f0f0f0;
+  padding: 2rem;
+}
+
+/* Fila horizontal */
+.contenedor_informativo .fila-horizontal {
+  background: #ffffff;
+  color: #000;
+  padding: 1.5rem;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor de columnas */
+.contenedor_informativo .contenedor-columnas {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.festa {
+  text-align: center;
+}
+
+/* Columnas */
+.contenedor_informativo .columna {
+  flex: 1;
+  padding: 1.5rem;
+  background: #ffffff;
+  color: black;
+  text-align: start;
+}
+
+/* Encabezado */
+.act {
+  text-align: center;
+}
 
 
-/*ACTUALITAT NOTICIES*/
+/* Imagen */
+.columna img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* RESPONSIVE: Diseño para móviles */
+@media (max-width: 768px) {
+  .contenedor_festa {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .contenedor_festa .contenedor-columnas {
+    flex-direction: column;
+  }
+
+  .contenedor_festa .columna {
+    text-align: left;
+    padding: 1rem;
+  }
+
+ 
+}
+
+
+/*festa castanyada */
+/* Contenedor principal */
+.contenedor_informativo {
+  width: 80%;
+  margin: 2rem auto;
+  background: #f0f0f0;
+  padding: 2rem;
+}
+
+/* Fila horizontal */
+.contenedor_informativo .fila-horizontal {
+  background: #ffffff;
+  color: #000;
+  padding: 1.5rem;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor de columnas */
+.contenedor_informativo .contenedor-columnas {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.festa {
+  text-align: center;
+}
+
+/* Columnas */
+.contenedor_informativo .columna {
+  flex: 1;
+  padding: 1.5rem;
+  background: #ffffff;
+  color: black;
+  text-align: start;
+}
+
+/* Encabezado */
+.act {
+  text-align: center;
+}
+
+
+/* Imagen */
+.columna img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* RESPONSIVE: Diseño para móviles */
+@media (max-width: 768px) {
+  .contenedor_festa {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .contenedor_festa .contenedor-columnas {
+    flex-direction: column;
+  }
+
+  .contenedor_festa .columna {
+    text-align: left;
+    padding: 1rem;
+  }
+
+ 
+}
+
+
+/* PROGRAMA DE ACTIVIDADES 2025/2026 */
+/* Contenedor principal */
+.contenedor_informativo {
+  width: 80%;
+  margin: 2rem auto;
+  background: #f0f0f0;
+  padding: 2rem;
+}
+
+/* Fila horizontal */
+.contenedor_informativo .fila-horizontal {
+  background: #ffffff;
+  color: #000;
+  padding: 1.5rem;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+.aniversari {
+  text-align: center;
+}
+
+/* Encabezado */
+.act {
+  text-align: center;
+}
+/* Contenedor de columnas */
+.contenedor_informativo .contenedor-columnas {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: flex-start; /* ✅ evita que las columnas se estiren en altura */
+}
+
+/* Columna de texto (ocupa el resto) */
+.contenedor_informativo .columna.texto {
+  flex: 1; /* ocupa el espacio disponible */
+  padding: 1.5rem;
+  background: #ffffff;
+  color: black;
+  text-align: start;
+}
+
+/* Columna de imagen (solo lo que ocupa su contenido) */
+.contenedor_informativo .columna.imagen-tallers {
+  flex: 0 0 auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  text-align: center;
+}
+
+.columna.imagen-tallers img {
+  width: 100%;
+  max-width: 500px; /* ajusta según lo grande que quieras */
+  height: auto;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* RESPONSIVE: Diseño para móviles */
+@media (max-width: 768px) {
+  .contenedor_informativoo {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .contenedor_informativoo .contenedor-columnas {
+    flex-direction: column; /* apila texto e imagen */
+  }
+
+  .contenedor_informativoo .columna {
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .columna.imagen-tallers {
+    text-align: center;
+  }
+}
+
+
+
+/*CASAL DEL VERANO*/
+
+.contenedor_casalestiu {
+  width: 80%;
+  margin: 2rem auto;
+  background: #f0f0f0;
+  padding: 2rem;
+}
+
+.act, .text {
+  text-align: center;
+}
+
+.columna-horizontal {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Fila con texto + imágenes verticales */
+.fila-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.columna-texto {
+  flex: 2;
+  min-width: 280px;
+  background: #fff;
+  padding: 1.5rem;
+}
+
+.columna-texto .vertical {
+  display: block;
+  margin: 1rem auto 0 auto; /* top margin + auto en laterales */
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 0.5rem;
+
+}
+
+.columna-vertical {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 1.5rem;
+}
+
+.columna-vertical img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 0.5rem;
+}
+
+/* Fila con imágenes horizontales */
+.fila-horizontal {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  background: #fff;
+}
+
+.fila-horizontal img {
+  width: 48%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fila-1 {
+    flex-direction: column;
+  }
+
+  .fila-horizontal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fila-horizontal img {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+
+/*ACTUALITAT NOTICIES ANIVERSARI*/
+
+/* Contenedor principal */
+.contenedor_casalestiu {
+  width: 80%;
+  margin: 2rem auto;
+  background: #f0f0f0;
+  padding: 2rem;
+}
+
+/* Fila horizontal */
+.contenedor_casalestiu .columna-horizontal {
+  background: #ffffff;
+  color: #000;
+  padding: 1.5rem;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor de columnas */
+.contenedor_casalestiu .contenedor-columnass {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.text {
+  text-align: center;
+}
+
+/* Columnas */
+.contenedor_casalestiu .columnaa {
+  flex: 1;
+  padding: 1.5rem;
+  background: #ffffff;
+  color: black;
+  text-align: start;
+}
+
+/* Encabezado */
+.act {
+  text-align: center;
+}
+
+
+/* Imagen */
+.columnaa img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* RESPONSIVE: Diseño para móviles */
+@media (max-width: 768px) {
+  .contenedor_casalestiu {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .contenedor_casalestiu .contenedor-columnass {
+    flex-direction: column;
+  }
+
+  .contenedor_casalestiu .columnaa {
+    text-align: left;
+    padding: 1rem;
+  }
+
+ 
+}
+
+
+
+
+/*ACTUALITAT NOTICIES ANIVERSARI*/
+
+/* Contenedor principal */
+.contenedor_informativo {
+  width: 80%;
+  margin: 2rem auto;
+  background: #f0f0f0;
+  padding: 2rem;
+}
+
+/* Fila horizontal */
+.contenedor_informativo .fila-horizontal {
+  background: #ffffff;
+  color: #000;
+  padding: 1.5rem;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor de columnas */
+.contenedor_informativo .contenedor-columnas {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.aniversari {
+  text-align: center;
+}
+
+/* Columnas */
+.contenedor_informativo .columna {
+  flex: 1;
+  padding: 1.5rem;
+  background: #ffffff;
+  color: black;
+  text-align: start;
+}
+
+/* Encabezado */
+.act {
+  text-align: center;
+}
+
+
+/* Imagen */
+.columna img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* RESPONSIVE: Diseño para móviles */
+@media (max-width: 768px) {
+  .contenedor_informativo {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .contenedor_informativo .contenedor-columnas {
+    flex-direction: column;
+  }
+
+  .contenedor_informativo .columna {
+    text-align: left;
+    padding: 1rem;
+  }
+
+ 
+}
+
+
+/*ACTUALITAT NOTICIES CASAL*/
 
 /* Contenedor principal */
 .contenedor_noti {
@@ -249,7 +715,7 @@ main {
 /* Botón */
 .btn {
   background-color: #e1c405 ; 
-;
+
   border: none;
   color: white;
   padding: 1rem 2rem;
@@ -261,6 +727,36 @@ main {
   border-radius: 0.5rem;
   transition: all 0.3s ease;
   display: inline-block;
+}
+
+.links-escoles {
+  display: flex;
+  gap: 20px; /* espacio entre bloques */
+  flex-wrap: wrap; /* para que en móvil bajen */
+}
+
+.item-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.inscripcions-escoles {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.item-inscripcio {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 10px;
 }
 
 .btn:hover {
@@ -298,6 +794,7 @@ main {
       text-align: center;
   }
 }
+*/
 
 
 /*COLONIES I CAMPAMENTS*/
@@ -369,12 +866,10 @@ main {
 }
 
 /* Imagen */
-.columna img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 0.5rem;
-  display: block;
-  margin: 0 auto;
+.contenedor-columnas {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start; /* 👈 ESTA ES LA SOLUCIÓN */
 }
 
 /* RESPONSIVE: Diseño para móviles */
@@ -473,6 +968,7 @@ main {
   align-items: center;
   justify-content: center;
   background-color: ;
+  
 }
 
 .imagen-inscripcion img {
@@ -481,6 +977,10 @@ main {
   height: auto;
   border-radius: 0.5rem;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.imagen-inscripcion img:hover {
+  transform: scale(1.1);
 }
 
 /* RESPONSIVE: Móviles */
@@ -561,203 +1061,131 @@ main {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  background-color: ;
+  background-color: ; /* Puedes cambiar el color de fondo si lo prefieres */
+  flex-wrap: wrap; /* Esto permite que las imágenes se ajusten si no caben en una sola fila */
 }
 
-.fundesplai-img {
-  height: 150px; /* o el alto que prefieras */
+.fundesplai-img,
+.fundesplai-img2 {
+  height: auto;
+  max-width: 100%; /* Las imágenes no superarán el 100% del ancho disponible */
   object-fit: contain;
   margin: 0 1em;
-  background-color: ;
+}
+
+/* Opcional: un tamaño máximo para la imagen */
+.fundesplai-img {
+  max-height: 150px; /* Tamaño máximo para la primera imagen */
 }
 
 .fundesplai-img2 {
-  height: 100px; /* o el alto que prefieras */
-  object-fit: contain;
-  margin: 0 1em;
-  background-color: ;
+  max-height: 100px; /* Tamaño máximo para la segunda imagen */
+}
+
+/* Responsive: Cuando la pantalla es pequeña, las imágenes se ajustan */
+@media (max-width: 768px) {
+  .fundesplai {
+      justify-content: center; /* Alinea las imágenes al centro */
+  }
+
+  .fundesplai-img,
+  .fundesplai-img2 {
+      max-height: 120px; /* Ajusta el tamaño para pantallas pequeñas */
+      margin: 0.5em; /* Reduce el margen */
+  }
 }
 
 
 /* QUÈ FEM? */
 
-/* Contenedor del slider */
-.slider {
-  background-color: #83b2d9;
-  max-width: 1400px;
-  color: #fff;
-  grid-template-columns: 35% 65%;
-  display: grid;
-  position: relative;
-  font-family: sans-serif; /* Se aplica solo dentro del slider */
-  margin: auto;
-  padding: 1rem;
-  margin-top: 10rem; /* Ajusta este valor según necesites */
-  
+/* ===== QUÈ FEM - Disseny modern (no afecta la resta de la web) ===== */
+.qf-wrap{font-family:Helvetica,Arial,sans-serif;color:#222;margin-top:8rem;padding:0 0 2rem}
+.qf-wrap h1,.qf-wrap h2,.qf-wrap h3{font-family:'Roboto',sans-serif;line-height:1.2;color:#1565c0}
+
+.qf-hero{
+  width:90%;max-width:1200px;margin:0 auto 2rem;
+  background:#83b2d9;border-radius:14px;padding:3.5rem 3rem;
+  color:#fff;position:relative;overflow:hidden;
+}
+.qf-hero::before{content:"";position:absolute;top:-60px;right:-60px;width:240px;height:240px;background:#e1c405;opacity:.25;border-radius:50%}
+.qf-hero::after{content:"";position:absolute;bottom:-80px;left:-40px;width:200px;height:200px;background:#fff;opacity:.1;border-radius:50%}
+.qf-hero-tag{
+  display:inline-block;background:#e1c405;color:#fff;
+  padding:.4rem 1rem;border-radius:999px;
+  font-weight:700;font-size:.85rem;letter-spacing:1px;
+  text-transform:uppercase;margin-bottom:1.2rem;position:relative;z-index:2;
+}
+.qf-hero h1{font-size:clamp(2.4rem,5vw,3.6rem);font-weight:900;color:#fff;margin:0 0 1rem;text-align:left;position:relative;z-index:2}
+.qf-hero p{font-size:1.05rem;max-width:680px;margin:0;position:relative;z-index:2;color:#f7fbff;line-height:1.6}
+
+.qf-tabs{
+  width:90%;max-width:1200px;margin:1rem auto 2rem;
+  display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;
+  padding:0;list-style:none;
+}
+.qf-tabs a{
+  background:#fff;color:#1565c0;
+  padding:.6rem 1.2rem;border-radius:999px;
+  font-weight:700;font-size:.9rem;
+  border:2px solid transparent;text-decoration:none;
+  transition:all .25s ease;display:inline-block;
+}
+.qf-tabs a:hover{border-color:#e1c405;background:#fffbe6;transform:translateY(-2px)}
+
+.qf-grid-wrap{width:90%;max-width:1200px;margin:2rem auto}
+.qf-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.qf-card{
+  background:#fff;padding:2rem 1.6rem;border-radius:14px;
+  position:relative;transition:all .35s ease;
+  border-top:5px solid;min-height:220px;
+  scroll-margin-top:9rem;
+}
+.qf-card:hover{transform:translateY(-6px);box-shadow:0 16px 32px rgba(0,0,0,.1)}
+.qf-card .num{font-family:'Roboto',sans-serif;font-weight:900;font-size:2.2rem;line-height:1;margin-bottom:.6rem;opacity:.4}
+.qf-card h3{font-size:1.2rem;margin:0 0 .6rem;color:#1565c0;text-align:left;font-weight:700}
+.qf-card p{font-size:.93rem;color:#444;margin:0;line-height:1.5}
+
+.qf-card.k1{border-color:#1565c0}.qf-card.k1 .num,.qf-card.k1 h3{color:#1565c0}
+.qf-card.k2{border-color:#e1c405}.qf-card.k2 .num,.qf-card.k2 h3{color:#c9af04}
+.qf-card.k3{border-color:#d71f10}.qf-card.k3 .num,.qf-card.k3 h3{color:#d71f10}
+.qf-card.k4{border-color:#83b2d9}.qf-card.k4 .num,.qf-card.k4 h3{color:#5f93bf}
+.qf-card.k5{border-color:#1565c0}.qf-card.k5 .num,.qf-card.k5 h3{color:#1565c0}
+.qf-card.k6{border-color:#e1c405}.qf-card.k6 .num,.qf-card.k6 h3{color:#c9af04}
+.qf-card.k7{border-color:#d71f10}.qf-card.k7 .num,.qf-card.k7 h3{color:#d71f10}
+.qf-card.k8{border-color:#83b2d9}.qf-card.k8 .num,.qf-card.k8 h3{color:#5f93bf}
+
+.qf-gallery-wrap{
+  width:90%;max-width:1200px;margin:3rem auto;
+  background:#fff;padding:3rem 2rem;border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+.qf-gal-title{text-align:center;font-size:1.8rem;margin:0 0 .4rem;font-weight:700}
+.qf-gal-sub{text-align:center;color:#555;margin:0 0 2rem}
+.qf-gal{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.qf-pol{
+  background:#fff;padding:.7rem;border-radius:8px;
+  box-shadow:0 10px 20px rgba(0,0,0,.08);
+  transition:transform .4s ease,box-shadow .4s ease;
+  cursor:pointer;overflow:hidden;display:block;
+}
+.qf-pol:hover{transform:rotate(-2deg) scale(1.03);box-shadow:0 15px 25px rgba(0,0,0,.18)}
+.qf-pol img{width:100%;height:240px;object-fit:cover;border-radius:6px;transition:transform .4s ease;display:block}
+.qf-pol:hover img{transform:scale(1.05)}
+
+@media (max-width:1024px){.qf-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:768px){
+  .qf-wrap{margin-top:7rem}
+  .qf-hero{padding:2.5rem 2rem}
+  .qf-grid{grid-template-columns:repeat(2,1fr)}
+  .qf-gal{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:520px){
+  .qf-grid{grid-template-columns:1fr}
+  .qf-gal{grid-template-columns:1fr}
 }
 
-
-
-/* Contenedor de contenido */
-.slider .content_container {
-  padding: 40px;
-}
-
-/* Navegación de slides */
-.slider .slide_navigation {
-  list-style: none;
-  padding: 0;
-}
-
-.slider .slide_navigation li {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.slider .slide_navigation a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  transition: 0.3s ease-in-out;
-  display: inline-block;
-}
-
-.slider .slide_navigation a:hover,
-.slider .slide_navigation a.active {
-  font-weight: bold;
-  color: yellow;
-}
-
-/* Contenedor de slides */
-.slider .slides {
-  overflow-y: hidden; /* Evita el scroll manual */
-  max-height: 500px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* Espaciado entre slides */
-  scroll-behavior: smooth;
-}
-
-/* Estilos de cada slide */
-.slider .slide {
-  min-height: 500px;
-  background-color: #ffff7f;
-  display: flex;
-  padding: 40px;
-  color: #333;
-  align-items: center;
-  transition: 0.5s ease-in-out;
-}
-
-/*Fon size*/
-.inner_content, #descripcio{
-  font-size: 1.8rem;
-}
-
-
-
-/* Alternancia de colores */
-.slider .slide:nth-child(even) {
-  background-color: #fca0a0;
-}
-
-@media screen and (max-width: 768px) {
-  .slider {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      grid-template-columns: 1fr; /* Elimina la división de columnas */
-      padding: 0.5rem;
-      margin-top: 7rem; /* Aumenta la distancia en móviles */
-  }
-
-  .slider .slides {
-      max-height: unset; /* Permitir que los slides crezcan */
-      overflow-y: auto; /* Permitir scroll si es necesario */
-  }
-
-  .slider .slide {
-      min-height: auto; /* Permitir que la altura se adapte al contenido */
-      padding: 20px; /* Reducir el padding en pantallas pequeñas */
-      text-align: center; /* Centrar texto */
-  }
-
-  .slider .content_container {
-      padding: 20px;
-  }
-
-  .slider .slide_navigation {
-      text-align: center; /* Centrar navegación */
-      margin-top: 10px;
-  }
-
-  .slider .slide_navigation a {
-      font-size: 0.9rem; /* Reducir el tamaño del texto */
-  }
-}
-
-
-h1 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-weight: 400;
-}
-
-.gallery-fem {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background: #f2f2f2;
-  padding: 2rem;
-  color: #333;
-}
-
-.polaroid {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  cursor: pointer;
-  text-align: center;
-  position: relative;
-}
-
-.polaroid:hover {
-  transform: rotate(-2deg) scale(1.03);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-}
-
-.polaroid img {
-  width: 100%;
-  height: auto; /* Mantiene la proporción sin estirarlas verticalmente */
-  object-fit: cover; /* Asegura que se recorten si es necesario para llenar el contenedor sin deformarse */
-  max-height: 400px; /* Límite de altura para que no se haga tan grande */
-  border-radius: 8px;
-  transition: transform 0.4s ease;
-}
-
-.polaroid:hover img {
-  transform: scale(1.05);
-}
-
-/* Responsive para pantallas pequeñas */
-@media(max-width: 900px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media(max-width: 600px) {
-  .gallery-fem {
-    grid-template-columns: 1fr;
-  }
-}
+.qf-reveal{opacity:0;transform:translateY(20px);transition:all .7s ease}
+.qf-reveal.show{opacity:1;transform:none}
 
 
 /*GALERIA*/

@@ -1,28 +1,46 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST["name"]);
-    $email = htmlspecialchars($_POST["email"]);
-    $phone = htmlspecialchars($_POST["phone"]);
-    $message = htmlspecialchars($_POST["message"]);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    $to = "martineznayeli312@gmail.com";  // 🔹 Reemplaza con tu correo
-    $subject = "Nou Missatge del Formulari de Contacte";
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+require __DIR__ . '/vendor/autoload.php';
 
-    $body = "Has rebut un missatge nou del formulari:\n\n";
-    $body .= "Nom: $name\n";
-    $body .= "Correu Electrònic: $email\n";
-    $body .= "Telèfon: $phone\n";
-    $body .= "Missatge:\n$message\n";
+$mail = new PHPMailer(true);
 
-    if (mail($to, $subject, $body, $headers)) {
-        echo "El missatge s'ha enviat correctament.";
-    } else {
-        echo "Error en enviar el missatge. Torna-ho a provar.";
-    }
-} else {
-    echo "Accés no permès.";
+try {
+    // Comprobamos que los datos del formulario han sido enviados
+    $name = isset($_POST['name']) ? $_POST['name'] : 'No proporcionado';
+    $email = isset($_POST['email']) ? $_POST['email'] : 'No proporcionado';
+    $phone = isset($_POST['phone']) ? $_POST['phone'] : 'No proporcionado';
+    $message = isset($_POST['message']) ? $_POST['message'] : 'No proporcionado';
+
+    // Configuración del servidor SMTP
+    $mail->isSMTP();
+    $mail->Host = 'smtp.buzondecorreo.com'; // Servidor SMTP
+    $mail->SMTPAuth = true;
+    $mail->Username = 'clubdesplai@diversitatludica.cat'; // Tu dirección de correo electrónico
+    $mail->Password = 'Diversitatludica2025'; // Tu contraseña de correo
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Encriptación SSL/TLS
+    $mail->Port = 465; // Puerto 465 para SSL/TLS
+
+    // Remitente y destinatario
+    $mail->setFrom('clubdesplai@diversitatludica.cat', 'Formulari Web');
+    $mail->addAddress('diversitatludica@fundesplai.org'); // Dirección de destino del correo
+
+    // Contenido del mensaje
+    $mail->isHTML(true);
+    $mail->Subject = 'Nou missatge des del formulari web';
+    $mail->Body = "
+        <h2>Nou missatge del formulari:</h2>
+        <p><strong>Nom:</strong> $name</p>
+        <p><strong>Correu electrònic:</strong> $email</p>
+        <p><strong>Telèfon:</strong> $phone</p>
+        <p><strong>Missatge:</strong><br>$message</p>
+    ";
+
+    // Enviar el correo
+    $mail->send();
+    echo 'Missatge enviat correctament.';
+} catch (Exception $e) {
+    echo "Error: El missatge no s\'ha pogut enviar. {$mail->ErrorInfo}";
 }
 ?>

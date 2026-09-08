@@ -160,6 +160,50 @@ main {
 }
 
 
+/*FOTO INICIO*/
+/* ===== HERO INICI amb foto de fons ===== */
+/* FOTO INICIO */
+.hero-inici {
+    position: relative;
+    width: 100%;
+    min-height: 88vh;
+    margin-top: 80px;
+    background: url('../img/inici.jpg') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-inici::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(21,101,192,.35) 0%,
+        rgba(0,0,0,.55) 100%
+    );
+    z-index: 1;
+}
+
+.hero-inici-content{position:relative;z-index:2;text-align:center;color:#fff;padding:2rem 1.5rem;max-width:900px;animation:heroFadeIn 1s ease-out}
+
+@keyframes heroFadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.hero-inici-tag{display:inline-block;background:#e1c405;color:#fff;padding:.5rem 1.2rem;border-radius:999px;font-family:'Roboto',Arial,sans-serif;font-weight:700;font-size:.85rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.5rem;box-shadow:0 6px 20px rgba(225,196,5,.4)}
+.hero-inici h1{font-family:'Roboto',Arial,sans-serif;font-size:clamp(2.4rem,6vw,4.5rem);font-weight:900;line-height:1.1;margin:0 0 1.2rem;text-shadow:0 4px 24px rgba(0,0,0,.4);color:#fff}
+.hero-inici h1 span{color:#e1c405}
+.hero-inici p.hero-lead{font-size:clamp(1rem,1.6vw,1.2rem);max-width:680px;margin:0 auto 2.2rem;line-height:1.6;text-shadow:0 2px 12px rgba(0,0,0,.5);color:#fff}
+.hero-inici-btns{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+.hero-btn{display:inline-block;padding:.9rem 1.8rem;border-radius:999px;font-family:'Roboto',Arial,sans-serif;font-weight:700;font-size:1rem;text-decoration:none;transition:all .3s ease;border:2px solid transparent}
+.hero-btn-primary{background:#e1c405;color:#1565c0;box-shadow:0 8px 24px rgba(225,196,5,.4)}
+.hero-btn-primary:hover{background:#f4e841;transform:translateY(-3px);box-shadow:0 12px 28px rgba(225,196,5,.5);color:#1565c0}
+.hero-btn-ghost{background:transparent;color:#fff;border-color:#fff}
+.hero-btn-ghost:hover{background:#fff;color:#1565c0;transform:translateY(-3px)}
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:2;color:#fff;font-size:1.5rem;animation:heroBounce 2s infinite;text-decoration:none}
+@keyframes heroBounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(10px)}}
+@media(max-width:768px){.hero-inici{min-height:80vh}.hero-inici-btns{flex-direction:column;align-items:stretch;max-width:280px;margin:0 auto}}
+
 /* CArousel */
 
 /* Contenedor principal */
@@ -1014,87 +1058,101 @@ main {
 
 /* QUI SOM*/
 
-/* Ajuste del contenedor principal */
-.contenedor-2 {
-  width: 100%;
-  min-height: 10rem; /* O un valor menor si es necesario */
-  display: flex;
-  flex-direction: column;
-  gap: 1rem; /* Reduce el espacio entre elementos */
-  margin-top: 8rem; /* Asegura que no tenga margen extra */
-  padding-top: 2rem; /* Agrega un pequeño espacio para no chocar con el menú */
+/* ===== QUI SOM - Disseny modern (no afecta la resta de la web) ===== */
+.qs-wrap{font-family:Helvetica,Arial,sans-serif;color:#222;margin-top:8rem;padding:0 0 2rem}
+.qs-wrap h1,.qs-wrap h2,.qs-wrap h3{font-family:'Roboto',sans-serif;line-height:1.2;color:#1565c0}
+
+.qs-hero{
+  width:90%;max-width:1200px;margin:0 auto 2rem;
+  background:#fff;border-radius:14px;overflow:hidden;
+  box-shadow:0 10px 30px rgba(21,101,192,.12);
 }
-.qui{
-  color: #000;
-  text-align: center;
+.qs-hero-inner{display:grid;grid-template-columns:1.1fr 1fr;align-items:stretch}
+.qs-hero-text{padding:3.5rem 3rem}
+.qs-hero-tag{
+  display:inline-block;background:#e1c405;color:#fff;
+  padding:.4rem 1rem;border-radius:999px;
+  font-weight:700;font-size:.85rem;letter-spacing:1px;
+  text-transform:uppercase;margin-bottom:1.2rem;
 }
-/* Ajuste del contenedor superior */
-.contenedor-superior {
-  background-color: #fff;
-  width: 100%;
-  height: 20rem;
-  text-align: center;
-  margin-top: 0;
-  padding-top: 1rem;
-  background-image: url(../img/20240726_124331.jpg);
-  background-size: cover; /* La imagen se ajusta al contenedor */
-  background-position: center 60%; /* Ajusta un poco el eje vertical */
-  background-repeat: no-repeat;
+.qs-hero h1{font-size:clamp(2.4rem,5vw,3.6rem);font-weight:900;color:#1565c0;margin:0 0 1rem;text-align:left}
+.qs-hero h1 span{color:#d71f10}
+.qs-hero p{font-size:1.05rem;color:#444;max-width:520px;margin:0}
+.qs-hero-img{
+  background-image:url('../img/20240726_124331.jpg');
+  background-size:cover;background-position:center 60%;
+  min-height:380px;position:relative;
+}
+.qs-hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(21,101,192,.25),transparent 60%)}
+
+.qs-intro{
+  width:90%;max-width:1200px;margin:2rem auto;
+  background:#fff;padding:3rem;border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+.qs-intro h2{font-size:1.8rem;margin:0 0 1.2rem;text-align:left;position:relative;padding-bottom:.6rem;font-weight:700}
+.qs-intro h2::after{content:"";position:absolute;left:0;bottom:0;width:60px;height:4px;background:#e1c405;border-radius:2px}
+.qs-intro p{margin:0 0 1rem;font-size:1.02rem;color:#333;line-height:1.6}
+.qs-intro strong{color:#1565c0}
+
+.qs-eixos{width:90%;max-width:1200px;margin:2rem auto;padding:1rem 0}
+.qs-eixos-title{text-align:center;font-size:2rem;margin:0 0 .5rem;font-weight:700}
+.qs-eixos-title span{color:#d71f10}
+.qs-eixos-sub{text-align:center;color:#555;margin:0 0 2.5rem;font-size:1rem}
+.qs-eixos-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.qs-eix{
+  background:#fff;padding:2.2rem 1.5rem 1.6rem;border-radius:14px;
+  text-align:center;border-top:6px solid;
+  transition:transform .35s ease,box-shadow .35s ease;position:relative;
+}
+.qs-eix:hover{transform:translateY(-8px);box-shadow:0 16px 32px rgba(0,0,0,.1)}
+.qs-eix-num{
+  position:absolute;top:-22px;left:50%;transform:translateX(-50%);
+  width:44px;height:44px;border-radius:50%;background:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Roboto',sans-serif;font-weight:900;font-size:1.1rem;
+  box-shadow:0 4px 10px rgba(0,0,0,.1);border:3px solid;
+}
+.qs-eix h3{font-size:1.3rem;margin:.6rem 0;text-align:center;font-weight:700}
+.qs-eix p{color:#444;font-size:.95rem;margin:0}
+
+.qs-eix.e1{border-top-color:#1565c0}.qs-eix.e1 .qs-eix-num{color:#1565c0;border-color:#1565c0}.qs-eix.e1 h3{color:#1565c0}
+.qs-eix.e2{border-top-color:#d71f10}.qs-eix.e2 .qs-eix-num{color:#d71f10;border-color:#d71f10}.qs-eix.e2 h3{color:#d71f10}
+.qs-eix.e3{border-top-color:#e1c405}.qs-eix.e3 .qs-eix-num{color:#c9af04;border-color:#e1c405}.qs-eix.e3 h3{color:#c9af04}
+.qs-eix.e4{border-top-color:#83b2d9}.qs-eix.e4 .qs-eix-num{color:#5f93bf;border-color:#83b2d9}.qs-eix.e4 h3{color:#5f93bf}
+
+.qs-fed{
+  width:90%;max-width:1200px;margin:3rem auto 0;
+  background:#fff;padding:3rem 2rem;border-radius:14px;
+  text-align:center;box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+.qs-fed h2{font-size:1.6rem;margin:0 0 1.5rem;text-align:center;font-weight:700}
+.qs-fed-logos{display:flex;justify-content:center;align-items:center;gap:4rem;flex-wrap:wrap}
+.qs-fed-logos img{max-height:140px;width:auto;object-fit:contain;transition:transform .3s ease}
+.qs-fed-logos img:hover{transform:scale(1.07)}
+
+@media (max-width:900px){
+  .qs-hero-inner{grid-template-columns:1fr}
+  .qs-hero-img{min-height:260px;order:-1}
+  .qs-hero-text{padding:2.5rem 2rem}
+  .qs-eixos-grid{grid-template-columns:repeat(2,1fr);gap:2rem}
+  .qs-intro{padding:2rem}
+}
+@media (max-width:560px){
+  .qs-wrap{margin-top:7rem}
+  .qs-eixos-grid{grid-template-columns:1fr}
+  .qs-fed-logos{gap:2rem}
+  .qs-fed-logos img{max-height:100px}
 }
 
-
-/* Ajuste de las cajas inferiores */
-.contenedor-inferior {
-  display: flex;
-  gap: 1rem; /* Espacio entre las cajas */
+.qs-reveal {
+    opacity: 1;
+    transform: none;
 }
-
-.caja {
-  flex: 1;
-  height: auto;
-  word-wrap: break-word; /* Asegura que las palabras largas se dividan para evitar desbordamiento */
-  margin: 1rem; /* Reduce los márgenes */
+.qs-reveal.show {
+    opacity: 1;
+    transform: none;
 }
-
-.fundesplai {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  background-color: ; /* Puedes cambiar el color de fondo si lo prefieres */
-  flex-wrap: wrap; /* Esto permite que las imágenes se ajusten si no caben en una sola fila */
-}
-
-.fundesplai-img,
-.fundesplai-img2 {
-  height: auto;
-  max-width: 100%; /* Las imágenes no superarán el 100% del ancho disponible */
-  object-fit: contain;
-  margin: 0 1em;
-}
-
-/* Opcional: un tamaño máximo para la imagen */
-.fundesplai-img {
-  max-height: 150px; /* Tamaño máximo para la primera imagen */
-}
-
-.fundesplai-img2 {
-  max-height: 100px; /* Tamaño máximo para la segunda imagen */
-}
-
-/* Responsive: Cuando la pantalla es pequeña, las imágenes se ajustan */
-@media (max-width: 768px) {
-  .fundesplai {
-      justify-content: center; /* Alinea las imágenes al centro */
-  }
-
-  .fundesplai-img,
-  .fundesplai-img2 {
-      max-height: 120px; /* Ajusta el tamaño para pantallas pequeñas */
-      margin: 0.5em; /* Reduce el margen */
-  }
-}
-
 
 /* QUÈ FEM? */
 

@@ -12,7 +12,7 @@
 
 body{
   font-family: helvetica;
-  background-color: #8673BA;
+  background-color: #64C9C5;
 }
 
 
@@ -190,16 +190,16 @@ main {
 .hero-inici-content{position:relative;z-index:2;text-align:center;color:#fff;padding:2rem 1.5rem;max-width:900px;animation:heroFadeIn 1s ease-out}
 
 @keyframes heroFadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
-.hero-inici-tag{display:inline-block;background:#e1c405;color:#fff;padding:.5rem 1.2rem;border-radius:999px;font-family:'Roboto',Arial,sans-serif;font-weight:700;font-size:.85rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.5rem;box-shadow:0 6px 20px rgba(225,196,5,.4)}
+.hero-inici-tag{display:inline-block;background:#fe6d68;color:#fff;padding:.5rem 1.2rem;border-radius:999px;font-family:'Roboto',Arial,sans-serif;font-weight:700;font-size:.85rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.5rem;box-shadow:0 6px 20px rgba(225,196,5,.4)}
 .hero-inici h1{font-family:'Roboto',Arial,sans-serif;font-size:clamp(2.4rem,6vw,4.5rem);font-weight:900;line-height:1.1;margin:0 0 1.2rem;text-shadow:0 4px 24px rgba(0,0,0,.4);color:#fff}
-.hero-inici h1 span{color:#e1c405}
+.hero-inici h1 span{color:#fff}
 .hero-inici p.hero-lead{font-size:clamp(1rem,1.6vw,1.2rem);max-width:680px;margin:0 auto 2.2rem;line-height:1.6;text-shadow:0 2px 12px rgba(0,0,0,.5);color:#fff}
 .hero-inici-btns{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
 .hero-btn{display:inline-block;padding:.9rem 1.8rem;border-radius:999px;font-family:'Roboto',Arial,sans-serif;font-weight:700;font-size:1rem;text-decoration:none;transition:all .3s ease;border:2px solid transparent}
-.hero-btn-primary{background:#e1c405;color:#1565c0;box-shadow:0 8px 24px rgba(225,196,5,.4)}
+.hero-btn-primary{background:#fe6d68;color:#fff;box-shadow:0 8px 24px rgba(225,196,5,.4)}
 .hero-btn-primary:hover{background:#f4e841;transform:translateY(-3px);box-shadow:0 12px 28px rgba(225,196,5,.5);color:#1565c0}
 .hero-btn-ghost{background:transparent;color:#fff;border-color:#fff}
-.hero-btn-ghost:hover{background:#fff;color:#1565c0;transform:translateY(-3px)}
+.hero-btn-ghost:hover{background:#fff;color:#fff;transform:translateY(-3px)}
 .hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:2;color:#fff;font-size:1.5rem;animation:heroBounce 2s infinite;text-decoration:none}
 @keyframes heroBounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(10px)}}
 @media(max-width:768px){.hero-inici{min-height:80vh}.hero-inici-btns{flex-direction:column;align-items:stretch;max-width:280px;margin:0 auto}}
@@ -719,7 +719,7 @@ main {
 .contenedor_noti {
   width: 80%;
   margin: 2rem auto;
-  background: #f0f0f0;
+  background: #8673BA;
   padding: 2rem;
   
 }

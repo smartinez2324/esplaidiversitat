@@ -1,101 +1,414 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treballa amb Nosaltres</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet"></head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Treballa amb nosaltres · Diversitat Lúdica</title>
+
+  <meta
+    name="description"
+    content="Forma part de l'equip de Diversitat Lúdica: monitors/es, coordinadors/es, voluntariat i premonitors/es."
+  >
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  >
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSGIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <script src="../js/main.js" defer></script>
+</head>
+
 <body>
 
-<!-- 🟢 Menú fijo -->
-<header>
-  <div class="menu-container"> <!-- Contenedor exclusivo para el menú -->
-    <nav class="navbar">
-      <a href="../index.html" class="logo">
-  <img src="../img/LOGO.png" alt="Logo" width="80" height="50">
-</a>
-      <input type="checkbox" id="toggler">
-      <label for="toggler"><i class="ri-menu-line"></i>☰</label>
-      <div class="menu">
+  <!-- MENÚ -->
+  <header>
+    <div class="menu-container">
+      <nav class="navbar">
+
+        <a href="../index.html" class="logo">
+          <img
+            src="../img/LOGO.png"
+            alt="Logo del Club d'Esplai Diversitat Lúdica"
+            width="80"
+            height="50"
+          >
+        </a>
+
+        <input type="checkbox" id="toggler">
+        <label for="toggler">
+          <i class="ri-menu-line"></i>☰
+        </label>
+
+        <div class="menu">
           <ul class="list">
-              <li><a href="../index.html">Inici</a></li>
-        <li><a href="../html/quisom.html">Qui Som?</a></li>
-        <li><a href="../html/quefem.html">Què Fem?</a></li>
-    
-        <li><a href="../html/galeria.html">Galeria</a></li>
-        <li><a href="../html/nostreequip.html">Nostre Equip</a></li>
-        <li><a href="../html/treballa amb nosaltres.html">Treballa amb Nosaltres</a></li>
-
-        <li><a href="../html/contacte.html">Contacte</a></li>
+            <li><a href="../index.html">Inici</a></li>
+            <li><a href="../html/quisom.html">Qui Som?</a></li>
+            <li><a href="../html/quefem.html">Què Fem?</a></li>
+            <li><a href="../html/galeria.html">Galeria</a></li>
+            <li><a href="../html/nostreequip.html">Nostre Equip</a></li>
+            <li>
+              <a href="../html/treballa amb nosaltres.html">
+                Treballa amb Nosaltres
+              </a>
+            </li>
+            <li><a href="../html/contacte.html">Contacte</a></li>
           </ul>
-      </div>
-  </nav>
-  </div>
-</header>
+        </div>
 
-    <main class="container mt-5">
-      <div class="contenedor-treballa">
-        <div class="columna1">
-          <h1 class="textre">Treballa amb Nosaltres</h1>
-          </br>
-          <h2 class="textre">Forma part de l'equip</h2>
-        
-          <p>Al Club d'Espai Diversitat Lúdica busquem monitors/es i coordinadors/es amb ganes d'educar a través del lleure i formar part d'un equip compromès.</p>
-          <p>Si ets una persona dinàmica, responsable i amb motivació per treballar amb infants i joves, t'estem buscant!</p>
-      </br>
-          <p><b>Monitor/es de lleure</b> per a activitats de dissabtes, casals, colònies i projectes educatius.</p>
-          <p><b>Coordinadors/es d'activitats</b> amb experiència en gestió d'equips i dinamització de grups.</p>
-      </br>
-          <p>Si vols enviar-nos el teu <b>currículum per treballar amb nosaltres,</b> fes-ho a <b>diversitatludica@fundesplai.org</b>.</p>
+      </nav>
+    </div>
+  </header>
+
+  <main class="tn-wrap">
+
+    <!-- HERO -->
+    <section class="tn-hero" data-testid="tn-hero">
+
+      <div class="tn-hero-inner">
+
+        <div class="tn-hero-text">
+
+          <span class="tn-hero-tag tn-fade d1" data-testid="tn-hero-tag">
+            Uneix-te
+          </span>
+
+          <h1 class="tn-hero-title" data-testid="tn-hero-title">
+            <span class="tn-line">
+              <span>Treballa amb</span>
+            </span>
+
+            <span class="tn-line">
+              <span class="tn-hero-accent">nosaltres</span>
+            </span>
+          </h1>
+
+          <p class="tn-hero-lead tn-fade d2">
+            Si t'apassiona el lleure educatiu, aquí hi ha lloc per a tu:
+            comparteix, aprèn i creix amb un equip que converteix cada
+            activitat en una aventura.
+          </p>
+
         </div>
-      
-        <div class="columna2">
-          <div class="foto1">
-            <h2 class="textre">Vols fer voluntariat?</h2>
-            <p>També oferim espais per a persones que vulguin col·laborar puntualment en activitats de lleure, sortides i projectes socials. Participar com a voluntari/ària és una oportunitat per viure experiències enriquidores i contribuir a la comunitat.</p>
+
+        <div class="tn-hero-visual tn-fade d3">
+
+          <div
+            class="tn-hero-img"
+            role="img"
+            aria-label="Infants jugant amb un paracaigudes de colors a l'aire lliure"
+            data-testid="tn-hero-img"
+          ></div>
+
+          <div
+            class="tn-hero-badge"
+            aria-hidden="true"
+            data-testid="tn-hero-badge"
+          >
+
+            <svg class="tn-hero-badge-ring" viewBox="0 0 100 100">
+              <defs>
+                <path
+                  id="tnBadgeCircle"
+                  d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"
+                />
+              </defs>
+
+              <text>
+                <textPath href="#tnBadgeCircle">
+                  UNEIX-TE · DIVERSITAT LÚDICA ·
+                </textPath>
+              </text>
+            </svg>
+
+            <svg class="tn-hero-badge-star" viewBox="0 0 24 24">
+              <path
+                d="M12 1.8l2.7 7.5 7.5 2.7-7.5 2.7L12 22.2l-2.7-7.5-7.5-2.7 7.5-2.7z"
+                fill="#fe6d68"
+              />
+            </svg>
+
           </div>
-          <div class="foto2"></div>
         </div>
-      
-        <div class="columna3">
-          <div class="foto3">
-            <h2 class="textre">Ets premonitor/a o vols ser-ho?</h2>
-            <p>Si tens ganes de formar-te com a monitor/a, t'oferim un espai d'aprenentatge i acompanyament on podràs aprendre a dinamitzar activitats, treballar en equip i descobrir si aquest és el teu camí.</p>
-          </div>
-          <div class="foto4"></div>
+
+      </div>
+    </section>
+
+    <!-- INTRODUCCIÓ -->
+    <section class="tn-intro tn-reveal" data-testid="tn-intro">
+
+      <div class="tn-intro-inner">
+
+        <h2 data-testid="tn-intro-title">
+          Forma part de <span>l'equip</span>
+        </h2>
+
+        <div class="tn-intro-text">
+
+          <p>
+            Al Club d'Esplai Diversitat Lúdica busquem monitores i
+            coordinadores amb ganes d'educar a través del lleure i
+            formar part d'un equip compromès.
+          </p>
+
+          <p>
+            Si ets una persona dinàmica, responsable i amb motivació
+            per treballar amb infants i joves, t'estem buscant!
+          </p>
+
         </div>
       </div>
-      
-      
-    </main>
-    
-    
-    <div class="xarxes">
-      <div class="cajita">
-        <h3 class="redes">Segueix-nos a les xarxes socials per estar al dia de totes les novetats.</h3>
+    </section>
+
+    <!-- PERFILS -->
+    <section class="tn-perfils" id="perfils" data-testid="tn-perfils">
+
+      <h2 class="tn-perfils-title" data-testid="tn-perfils-title">
+        Descobreix les <span>oportunitats</span>
+      </h2>
+
+      <p class="tn-perfils-sub" data-testid="tn-perfils-sub">
+        Hi ha diferents maneres de formar part del nostre projecte.
+      </p>
+
+      <div class="tn-perfils-grid">
+
+        <!-- MONITORS/ES -->
+        <article class="tn-perfil p1 tn-reveal" data-testid="tn-perfil-1">
+
+          <span class="tn-perfil-num" aria-hidden="true">1</span>
+
+          <h3>Monitores de lleure</h3>
+
+          <p>
+            Per a activitats de dissabtes, casals, colònies i
+            projectes educatius.
+          </p>
+
+        </article>
+
+        <!-- VOLUNTARIAT -->
+        <article class="tn-perfil p2 tn-reveal" data-testid="tn-perfil-2">
+
+          <span class="tn-perfil-num" aria-hidden="true">2</span>
+
+          <h3>Vols fer voluntariat?</h3>
+
+          <p>
+            També oferim espais per a persones que vulguin col·laborar
+            puntualment en activitats de lleure, sortides i projectes
+            socials. Participar com a voluntari/ària és una oportunitat
+            per viure experiències enriquidores i contribuir a la comunitat.
+          </p>
+
+        </article>
+
+        <!-- PREMONITORS/ES -->
+        <article class="tn-perfil p3 tn-reveal" data-testid="tn-perfil-3">
+
+          <span class="tn-perfil-num" aria-hidden="true">3</span>
+
+          <h3>Ets premonitor o vols ser-ho?</h3>
+
+          <p>
+            Si tens ganes de formar-te com a monitor, t'oferim un espai
+            d'aprenentatge i acompanyament on podràs aprendre a dinamitzar
+            activitats, treballar en equip i descobrir si aquest és el teu camí.
+          </p>
+
+        </article>
+
+        <!-- COORDINADORS/ES -->
+        <article class="tn-perfil p1 tn-reveal" data-testid="tn-perfil-4">
+
+          <span class="tn-perfil-num" aria-hidden="true">4</span>
+
+          <h3>Coordinadores d'activitats</h3>
+
+          <p>
+            Amb experiència en gestió d'equips i dinamització de grups.
+          </p>
+
+        </article>
+
       </div>
-      
-      <div class="cajita social-links">
-        <div class="contacto-item">
-          <a href="https://wa.me/34600838968"><i class="fa-brands fa-whatsapp"></i></a>
-          <p class="ws">600 83 89 68</p>
+    </section>
+
+    <!-- FRANJA ANIMADA -->
+    <div class="tn-marquee" data-testid="tn-marquee" aria-hidden="true">
+
+      <div class="tn-marquee-track">
+
+        <div class="tn-marquee-group">
+
+          <span class="tn-marquee-item">Lleure educatiu</span>
+          <svg class="tn-marquee-star" viewBox="0 0 24 24">
+            <path d="M12 1.8l2.7 7.5 7.5 2.7-7.5 2.7L12 22.2l-2.7-7.5-7.5-2.7 7.5-2.7z" fill="#fe6d68"/>
+          </svg>
+
+          <span class="tn-marquee-item">Compromís</span>
+          <svg class="tn-marquee-star" viewBox="0 0 24 24">
+            <path d="M12 1.8l2.7 7.5 7.5 2.7-7.5-2.7L12 22.2l-2.7-7.5-7.5-2.7 7.5-2.7z" fill="#fe6d68"/>
+          </svg>
+
+          <span class="tn-marquee-item">Diversitat</span>
+          <svg class="tn-marquee-star" viewBox="0 0 24 24">
+            <path d="M12 1.8l2.7 7.5 7.5 2.7-7.5-2.7L12 22.2l-2.7-7.5-7.5-2.7 7.5-2.7z" fill="#fe6d68"/>
+          </svg>
+
+          <span class="tn-marquee-item">Comunitat</span>
+          <svg class="tn-marquee-star" viewBox="0 0 24 24">
+            <path d="M12 1.8l2.7 7.5 7.5 2.7-7.5-2.7L12 22.2l-2.7-7.5-7.5-2.7 7.5-2.7z" fill="#fe6d68"/>
+          </svg>
+
+          <span class="tn-marquee-item">Formació</span>
+          <svg class="tn-marquee-star" viewBox="0 0 24 24">
+            <path d="M12 1.8l2.7 7.5 7.5 2.7-7.5-2.7-2.7-7.5z" fill="#fe6d68"/>
+          </svg>
+
+          <span class="tn-marquee-item">Il·lusió</span>
+          <svg class="tn-marquee-star" viewBox="0 0 24 24">
+            <path d="M12 1.8l2.7 7.5 7.5 2.7-7.5-2.7-2.7-7.5z" fill="#fe6d68"/>
+          </svg>
+
         </div>
-    
-        <div class="contacto-item">
-          <a href="https://www.facebook.com/share/1Bgi6zjJ7P/"><i class="fa-brands fa-facebook"></i></a>
-          <p class="fc">Club d'Esplai Diversitat Lúdica</p>
+
+        <div class="tn-marquee-group">
+
+          <span class="tn-marquee-item">Lleure educatiu</span>
+          <svg class="tn-marquee-star" viewBox="0 0 24 24">
+            <path d="M12 1.8l2.7 7.5 7.5 2.7-7.5 2.7L12 22.2l-2.7-7.5-7.5-2.7 7.5-2.7z" fill="#fe6d68"/>
+          </svg>
+
+          <span class="tn-marquee-item">Compromís</span>
+          <svg class="tn-marquee-star" viewBox="0 0 24 24">
+            <path d="M12 1.8l2.7 7.5 7.5 2.7-7.5-2.7L12 22.2l-2.7-7.5-7.5-2.7 7.5-2.7z" fill="#fe6d68"/>
+          </svg>
+
+          <span class="tn-marquee-item">Diversitat</span>
+          <svg class="tn-marquee-star" viewBox="0 0 24 24">
+            <path d="M12 1.8l2.7 7.5 7.5 2.7-7.5-2.7-2.7-7.5z" fill="#fe6d68"/>
+          </svg>
+
+          <span class="tn-marquee-item">Comunitat</span>
+          <svg class="tn-marquee-star" viewBox="0 0 24 24">
+            <path d="M12 1.8l2.7 7.5 7.5 2.7-7.5-2.7L12 22.2l-2.7-7.5-7.5-2.7 7.5-2.7z" fill="#fe6d68"/>
+          </svg>
+
+          <span class="tn-marquee-item">Formació</span>
+          <svg class="tn-marquee-star" viewBox="0 0 24 24">
+            <path d="M12 1.8l2.7 7.5 7.5 2.7-7.5-2.7-2.7-7.5z" fill="#fe6d68"/>
+          </svg>
+
+          <span class="tn-marquee-item">Il·lusió</span>
+          <svg class="tn-marquee-star" viewBox="0 0 24 24">
+            <path d="M12 1.8l2.7 7.5 7.5 2.7-7.5-2.7-7.5-2.7 7.5 2.7z" fill="#fe6d68"/>
+          </svg>
+
         </div>
-    
-        <div class="contacto-item">
-          <a href="https://www.instagram.com/esplaidiversitatludica?igsh=b2RxZjkwa2o4b2g5"> <i class="fa-brands fa-instagram"></i></a>
-          <p class="ig">esplaidiversitatludica</p>
-        </div>
+
       </div>
     </div>
-    
-    
-      
+
+    <!-- CRIDA A L'ACCIÓ -->
+    <section class="tn-cta tn-reveal" data-testid="tn-cta">
+
+      <div class="tn-cta-card">
+
+        <h2 data-testid="tn-cta-title">
+          Envia'ns la teva candidatura
+        </h2>
+
+        <p>
+          Escriu-nos a
+          <strong>diversitatludica@fundesplai.org</strong>
+          i uneix-te al projecte.
+        </p>
+
+
+        
+      <a
+        class="tn-cta-btn"
+        href="mailto:diversitatludica@fundesplai.org?subject=Candidatura%20-%20Treballa%20amb%20nosaltres"
+      >
+        Envia el teu CV
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M5 12h14M13 5l7 7-7 7"
+            stroke="currentColor"
+            stroke-width="2.2"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+
+
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- XARXES SOCIALS -->
+  <div class="xarxes">
+
+    <div class="cajita">
+      <h3 class="redes">
+        Segueix-nos a les xarxes socials per estar al dia
+        de totes les novetats.
+      </h3>
+    </div>
+
+    <div class="cajita social-links">
+
+      <!-- WHATSAPP -->
+      <div class="contacto-item">
+        <a href="https://wa.me/34600838968" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <p class="ws">600 83 89 68</p>
+      </div>
+
+      <!-- FACEBOOK -->
+      <div class="contacto-item">
+        <a href="https://www.facebook.com/share/1Bgi6zjJ7P/" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <p class="fc">Club d'Esplai Diversitat Lúdica</p>
+      </div>
+
+      <!-- INSTAGRAM -->
+      <div class="contacto-item">
+        <a href="https://www.instagram.com/esplaidiversitatludica?igsh=b2RxZjkwa2o4b2g5" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <p class="ig">esplaidiversitatludica</p>
+      </div>
+
+    </div>
+  </div>
+
 </body>
 </html>
